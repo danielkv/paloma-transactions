@@ -1,51 +1,52 @@
-# React + TypeScript + Vite
+# Financial Transaction Monitoring Tool - Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This application provides a dynamic platform for monitoring real-time financial transactions. It focuses on usability and presentation to help users identify and filter suspicious activities effectively.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+-   **Live Transaction Streaming**: Displays transactions as they occur.
+-   **Search and Filters**: Refine transaction views with temporary filters.
+-   **Interactive UI**: Intuitive design optimized for client demos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation Guide
 
-- Configure the top-level `parserOptions` property like this:
+### Requirements
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+-   Node.js (v14+ recommended)
+-   Supported browser (latest versions of Chrome, Firefox, or Edge)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Setup Steps
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository
+2. Install dependencies:
+    ```
+    yarn
+    ```
+3. Run the application on dev:
+    ```
+    yarn dev
+    ```
+4. Open the app at `localhost:5173`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# paloma-transactions
+## Development
+
+This application was built using `React` and `vite`. The structure and folder organization follow a simpler variation of DDD (Domain Driven Design).
+
+### Third party libraries
+
+The libraries choosen in this project were picked because of their extensive usage around the community and their long term support. They are easy to implement. For a project this type is faster to go with ready to use solutions then reinveting the wheel.
+
+#### Design libs
+
+-   **MUI** - Design System
+-   **material-react-table** - Table
+-   **notistack** - User Feedback
+
+#### Helper libs
+
+-   **axios** - API connection
+-   **libphonenumber-js** - phone number formating
+-   **tanstack/react-query** - fetching and caching
+-   **radash** - object handling
