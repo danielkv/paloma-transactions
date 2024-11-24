@@ -14,8 +14,7 @@ This application provides a dynamic platform for monitoring real-time financial 
 
 ### Requirements
 
--   Node.js (v14+ recommended)
--   Supported browser (latest versions of Chrome, Firefox, or Edge)
+-   Node.js (v18+ recommended)
 
 ### Setup Steps
 
