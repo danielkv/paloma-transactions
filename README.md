@@ -24,11 +24,16 @@ This application provides a dynamic platform for monitoring real-time financial 
     ```
     yarn
     ```
-3. Run the application on dev:
+3. Setup the env variables:
+    ```
+    VITE_API_BASE_URL=""
+    VITE_WS_BASE_URL=""
+    ```
+4. Run the application on dev:
     ```
     yarn dev
     ```
-4. Open the app at `localhost:5173`
+5. Open the app at `localhost:5173`
 
 ## Development
 
